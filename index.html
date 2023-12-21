@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Casey's Quiz Challenge</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- main heading for quiz-->
+    <h1>Casey's Quiz Challenge</h1>
+
+    <!--Timer label-->
+    <div>
+        <label id="label">Timer</label>
+        <input type="text" id="time" style="text-align:right;"/>
+    </div>
+
+    <!--Main card for the quiz, where the question will be presented and where the buttons will go also-->
+    <main>
+        <div class="card">
+            <div class="card-body" id="quiz-container">
+                <div class="card-title" id="question-prompt">2 minute timer begins when you press start</div>
+                <div class="line"><div>
+                <br/>
+                <div id="answer-buttons" class="hide"> </div>
+                <div id="score-display" class="hide">Your Score: 0</div>
+                <div class="controls">
+                    <button type="button" id="start-btn" class="start-btn">Start</button>
+                    <button type="button" id="next-btn" class="next-btn hide">Next</button>
+                    <button type="button" id="submit-btn" class="submit-btn hide">Submit</button>
+                </div>
+                <script src="script.js"></script>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
